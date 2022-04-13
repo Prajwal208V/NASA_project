@@ -1,5 +1,5 @@
 const http=require('http');//node http server
-const  app=require('./app');
+const  app=require('./src/app');
 
 const server = http.createServer(app);
 

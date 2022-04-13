@@ -7,9 +7,7 @@ const launchesRouter = require('./routes/launches/launches.router');
 
 const app = express();
 
-app.use(cors({
-    origin: 'http://localhost:3000',
-}));
+app.use(cors());
 app.use(morgan('combined'));//takes in a string that tells Morgan which of the predefined formats we should use for our logs. So it defaults to combined, which is the most complete one.
 
 app.use(express.json());//express server is going to take in some JSON data so we can use using which will pass any incoming JSON.
